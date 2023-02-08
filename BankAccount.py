@@ -5,7 +5,7 @@ class BankAccount:
     def __init__(self, int_rate=.01, balance=0):
         self.int_rate = int_rate
         self.balance = balance
-        # add each instance to the list of accounts
+        # add each new account to the list of accounts
         BankAccount.all_accounts.append(self)
     
     def deposit(self, amount):
@@ -32,7 +32,7 @@ class BankAccount:
 
     @classmethod
     def display_all_accounts(cls):
-    # loop through all instances and display their info
+    # loop through all accounts and display their info
         for account in cls.all_accounts:
             print("Interest Rate:", account.int_rate, "Balance:", account.balance)
 
