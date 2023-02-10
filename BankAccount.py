@@ -87,3 +87,4 @@ user3 = User("Jorge","jorge@gmail.com")
 
 user3.make_deposit(300,3).make_withdrawal(80,3).display_user_balance(3)
 user3.create_account().make_deposit(300,4).make_withdrawal(200,4).display_user_balance(4)
+BankAccount.display_all_accounts()
